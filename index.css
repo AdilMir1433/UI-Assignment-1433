@@ -138,7 +138,7 @@ body {
 
 .about-left p {
     margin-top: 65px;
-    min-width: 355px;
+    min-width: none;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -945,6 +945,10 @@ input[type=text], select, textarea {
 
     }
     @media (max-width: 1000px){
+        .offerings p{
+            margin: 30px 0px;
+            padding-left: 17px;
+        }
         .flexDiv button{
             display: none;
         }
@@ -1111,14 +1115,18 @@ input[type=text], select, textarea {
         }
     }
     @media (max-width: 770px) {
+        .cardImage {
+            left: 35.5%;
+            
+        }
         #smallText {
-            left: 7%;
+            left: 14%;
             width: 232px;
         }
         #para {
             width: 250px;
             font-size: 14px;
-            left: 5%;
+            left: 9%;
         }
         .contactContainerBox {
             width:350px;
@@ -1147,7 +1155,7 @@ input[type=text], select, textarea {
             letter-spacing: 0.2px;
         }
         .about-left p {
-            width: 255px;
+            /* width: 255px; */
             font-size: 18px;
 
         }
@@ -1171,15 +1179,16 @@ input[type=text], select, textarea {
             justify-content: center;
         }
         .offering {
-            /* padding-top: 0px;
-            padding-bottom: 42px;
-            padding-left: 5px;
-            padding-right: 15px; */
             padding-inline: 15px;
         }
 
         .checks1, .checks2 {
             display: none;
+        }
+        .offerings p {
+            font-size: 18px;
+            text-align: center;
+        
         }
         .pertner-text {
             width: 88%;
@@ -1197,7 +1206,7 @@ input[type=text], select, textarea {
         }
         .partnerImagesHidden img {
             margin-bottom: 15px;
-            padding-left: 60px;
+            padding-left: 40px;
             width: 100%;
         }
         .partnerImages {
@@ -1249,4 +1258,90 @@ input[type=text], select, textarea {
             box-shadow: 0px 0px 10px rgba(162, 184, 193, 0.5);
             align-items: center;
         }
+    }
+    @media (max-width: 369px) {
+        .about-left{
+        }
+        .about-left p {
+            font-size: 15px;
+            letter-spacing: 0.2px;
+            min-width: none;
+            max-width: none;
+            text-align: left;
+            margin-left: 0;
+            padding: 0;
+        }
+        .cards {
+            justify-content: center;
+            padding-left: 19px;
+            flex-wrap: wrap;
+            margin-top: 51px;
+        }
+        .card {
+            width: 357px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 0px 10px rgba(162, 184, 193, 0.5);
+            align-items: center;
+        }
+        .dateRead {
+            margin-top: 10px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .dateRead span:nth-child(1)
+        {
+            position: absolute;
+            left: 20px;
+        }
+        .dateRead span:nth-child(2)
+        {
+            position: absolute;
+            right: 45px;
+        }
+         .blogBox{
+            width: 320px;
+            height: 541px;
+            text-align: center;
+        }
+         .blogColouredStrip
+         {
+             margin-top: 18px;
+             width: 321px;
+             height: 10px;
+             
+         }
+         .blogBtn {
+            width: 150px;
+            margin-top: 90px;
+            font-size: 20px;
+        }
+        .about-btn2 {
+            font-size: 20px;
+        }
+         .blogImageContainer img {
+        
+            width: 320px;
+            height: 357px;
+        }
+         .blog-text {
+            position: absolute;
+            width: 290px;
+            height: 41px;
+            margin:19px 32px;
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 35px;
+            text-align: center;
+            letter-spacing: 0.2px;
+        
+            color: hsl(209, 69%, 10%);
+        
+        }
+        .contactContainerBox {
+            width:300px;
+        }
+        
     }
